@@ -1,31 +1,31 @@
 using UnityEngine.Events;
 
-// ÊÂ¼ş¼àÌıÆ÷½Ó¿Ú
+// äº‹ä»¶ç›‘å¬å™¨æ¥å£
 public interface IBaseEventListener
 {
 
 }
 
-// ·ºĞÍÊÂ¼ş¼àÌıÆ÷
+// æ³›å‹äº‹ä»¶ç›‘å¬å™¨
 public class BaseEventListener<T> : IBaseEventListener
 {
-    public UnityAction<T> actions; // ´æ´¢ÊÂ¼şµÄÎ¯ÍĞº¯Êı
+    public UnityAction<T> actions; // å­˜å‚¨äº‹ä»¶çš„å§”æ‰˜å‡½æ•°
 
-    // ¹¹Ôìº¯Êı£¬ÓÃÓÚÌí¼ÓÊÂ¼ş¼àÌıÆ÷
+    // æ„é€ å‡½æ•°ï¼Œç”¨äºæ·»åŠ äº‹ä»¶ç›‘å¬å™¨
     public BaseEventListener(UnityAction<T> action)
     {
-        actions += action; // Ìí¼ÓÊÂ¼ş¼àÌıÆ÷
+        actions += action; // æ·»åŠ äº‹ä»¶ç›‘å¬å™¨
     }
 }
 
-// ·Ç·ºĞÍÊÂ¼ş¼àÌıÆ÷
+// éæ³›å‹äº‹ä»¶ç›‘å¬å™¨
 public class BaseEventListener : IBaseEventListener
 {
-    public UnityAction actions; // ´æ´¢ÊÂ¼şµÄÎ¯ÍĞº¯Êı
+    public UnityAction actions; // å­˜å‚¨äº‹ä»¶çš„å§”æ‰˜å‡½æ•°
 
-    // ¹¹Ôìº¯Êı£¬ÓÃÓÚÌí¼ÓÊÂ¼ş¼àÌıÆ÷
+    // æ„é€ å‡½æ•°ï¼Œç”¨äºæ·»åŠ äº‹ä»¶ç›‘å¬å™¨
     public BaseEventListener(UnityAction action)
     {
-        actions += action; // Ìí¼ÓÊÂ¼ş¼àÌıÆ÷
+        actions += action; // æ·»åŠ äº‹ä»¶ç›‘å¬å™¨
     }
 }

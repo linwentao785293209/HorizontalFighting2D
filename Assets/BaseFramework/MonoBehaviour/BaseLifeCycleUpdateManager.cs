@@ -1,13 +1,13 @@
 /// <summary>
-/// BaseLifeCycleUpdateManager ¼Ì³Ğ×Ô BaseLifeCycleManager Àà£¬ÓÃÓÚ¹ÜÀí OnUpdate ÉúÃüÖÜÆÚÊÂ¼ş¡£
+/// BaseLifeCycleUpdateManager ç»§æ‰¿è‡ª BaseLifeCycleManager ç±»ï¼Œç”¨äºç®¡ç† OnUpdate ç”Ÿå‘½å‘¨æœŸäº‹ä»¶ã€‚
 /// </summary>
 public class BaseLifeCycleUpdateManager : BaseLifeCycleManager
 {
-    // Unity µÄ OnUpdate ·½·¨»áÔÚÃ¿Ò»Ö¡µ÷ÓÃ£¬ÕâÀïÖØĞ´ÁËËü¡£
+    // Unity çš„ OnUpdate æ–¹æ³•ä¼šåœ¨æ¯ä¸€å¸§è°ƒç”¨ï¼Œè¿™é‡Œé‡å†™äº†å®ƒã€‚
     private void Update()
     {
-        // µ÷ÓÃ»ùÀàµÄ InvokeEvent ·½·¨£¬´¥·¢ÉúÃüÖÜÆÚÊÂ¼ş¡£
-        // Õâ»áÍ¨ÖªËùÓĞ¶©ÔÄÁËÊÂ¼şµÄ¼àÌıÆ÷£¬ÒÔ±ãÖ´ĞĞÓë OnUpdate ÉúÃüÖÜÆÚÏà¹ØµÄ²Ù×÷¡£
+        // è°ƒç”¨åŸºç±»çš„ InvokeEvent æ–¹æ³•ï¼Œè§¦å‘ç”Ÿå‘½å‘¨æœŸäº‹ä»¶ã€‚
+        // è¿™ä¼šé€šçŸ¥æ‰€æœ‰è®¢é˜…äº†äº‹ä»¶çš„ç›‘å¬å™¨ï¼Œä»¥ä¾¿æ‰§è¡Œä¸ OnUpdate ç”Ÿå‘½å‘¨æœŸç›¸å…³çš„æ“ä½œã€‚
         InvokeEvent();
     }
 }
